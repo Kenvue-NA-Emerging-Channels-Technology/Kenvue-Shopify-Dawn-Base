@@ -37,66 +37,123 @@
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "enable_color_scheme",
+        "label": "Enable Color Scheme",
+        "default": true
+      },
+      {
+        "type": "color_scheme",
+        "id": "current_color_scheme",
+        "label": "Current Color Scheme"
+      },
+      {
         "type": "color_scheme_group",
         "id": "color_schemes",
         "definition": [
           {
-            "type": "color",
-            "id": "background",
-            "label": "t:settings_schema.colors.settings.background.label",
-            "default": "#FFFFFF"
-          },
-          {
-            "type": "color_background",
-            "id": "background_gradient",
-            "label": "t:settings_schema.colors.settings.background_gradient.label",
-            "info": "t:settings_schema.colors.settings.background_gradient.info"
+            "type":"header",
+            "content": "Primary Colors"
           },
           {
             "type": "color",
-            "id": "text",
-            "label": "t:settings_schema.colors.settings.text.label",
-            "default": "#121212"
+            "id": "primary_color_light",
+            "label": "Primary Color - Light"
           },
           {
             "type": "color",
-            "id": "button",
-            "label": "t:settings_schema.colors.settings.button_background.label",
-            "default": "#121212"
+            "id": "primary_color_dark",
+            "label": "Primary Color - Dark"
+          },
+          {
+            "type":"header",
+            "content": "Secondary & Accent Colors"
           },
           {
             "type": "color",
-            "id": "button_label",
-            "label": "t:settings_schema.colors.settings.button_label.label",
-            "default": "#FFFFFF"
+            "id": "secondary_color_1",
+            "label": "Secondary Color 1"
           },
           {
             "type": "color",
-            "id": "secondary_button_label",
-            "label": "t:settings_schema.colors.settings.secondary_button_label.label",
-            "default": "#121212"
+            "id": "secondary_color_2",
+            "label": "Secondary Color 2"
           },
           {
             "type": "color",
-            "id": "shadow",
-            "label": "t:settings_schema.colors.settings.shadow.label",
-            "default": "#121212"
+            "id": "secondary_color_3",
+            "label": "Secondary Color 3"
+          },
+          {
+            "type": "color",
+            "id": "secondary_color_4",
+            "label": "Secondary Color 4"
+          },
+          {
+            "type": "color",
+            "id": "accent_color",
+            "label": "Accent Color"
+          },
+          {
+            "type":"header",
+            "content": "Neutral Colors"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color_1",
+            "label": "Neutral Color 1"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color_2",
+            "label": "Neutral Color 2"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color_3",
+            "label": "Neutral Color 3"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color_4",
+            "label": "Neutral Color 4"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color_5",
+            "label": "Neutral Color 5"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color_6",
+            "label": "Neutral Color 6"
+          },
+          {
+            "type":"header",
+            "content": "Semantic Colors"
+          },
+          {
+            "type": "color",
+            "id": "error_color",
+            "label": "Error Color"
+          },
+          {
+            "type": "color",
+            "id": "success_color",
+            "label": "Success Color"
           }
         ],
         "role": {
-          "text": "text",
-          "background": {
-            "solid": "background",
-            "gradient": "background_gradient"
-          },
-          "links": "secondary_button_label",
-          "icons": "text",
-          "primary_button": "button",
-          "on_primary_button": "button_label",
-          "primary_button_border": "button",
-          "secondary_button": "background",
-          "on_secondary_button": "secondary_button_label",
-          "secondary_button_border": "secondary_button_label"
+          "text": "neutral_color_6",
+          "background": "neutral_color_1",
+          "links": "secondary_color_3",
+          "icons": "neutral_color_6",
+          "primary_button": "secondary_color_3",
+          "on_primary_button": "secondary_color_3",
+          "primary_button_border": "secondary_color_3",
+          "secondary_button": "neutral_color_1",
+          "on_secondary_button": "neutral_color_1",
+          "secondary_button_border": "secondary_color_3"
         }
       }
     ]

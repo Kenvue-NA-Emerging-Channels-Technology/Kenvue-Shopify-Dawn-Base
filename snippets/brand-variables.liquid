@@ -1,0 +1,95 @@
+<style>
+  :root {
+    /*
+      Color Palette 
+    */
+    --cp-lightblue-50: #E9F4FF;
+    --cp-darkblue-500: #142142;
+    --cp-neutral-0: #FFFFFF;
+    --cp-neutral-50: #F3F4F4;
+    --cp-neutral-100: #E8E8E9;
+    --cp-neutral-150: #DCDDDD;
+    --cp-neutral-600: #6E7172;
+    --cp-neutral-900: #1C1C1D;
+    --cp-pink-100: #F7D3DD;
+    --cp-pink-300: #E87B9A;
+    --cp-pink-500: #D82356;
+    --cp-pink-700: #821534;
+    --cp-yellow-500: #F7D172;
+    --cp-orange-500: #FF8E0E;
+    --cp-green-500: #229203;
+
+    {% if settings.enable_color_scheme %}
+      {% assign current_scheme = settings.current_color_scheme.settings %}
+    {% endif %}
+
+    /* Primary Colors */
+    --c-primary-light: {{ current_scheme.primary_color_light | default: 'var(--cp-lightblue-50)' }};
+    --c-primary-dark: {{ current_scheme.primary_color_dark | default: 'var(--cp-darkblue-500)' }};
+
+    /* Neutral Colors */
+    --c-neutral-1: {{ current_scheme.neutral_color_1 | default: 'var(--cp-neutral-0)' }};
+    --c-neutral-2: {{ current_scheme.neutral_color_2 | default: 'var(--cp-neutral-50)' }};
+    --c-neutral-3: {{ current_scheme.neutral_color_3 | default: 'var(--cp-neutral-100)' }};
+    --c-neutral-4: {{ current_scheme.neutral_color_4 | default: 'var(--cp-neutral-150)' }};
+    --c-neutral-5: {{ current_scheme.neutral_color_5 | default: 'var(--cp-neutral-600)' }};
+    --c-neutral-6: {{ current_scheme.neutral_color_6 | default: 'var(--cp-neutral-900)' }};
+
+    /* Secondary/Accent Colors */
+    --c-secondary-1: {{ current_scheme.secondary_color_1 | default: 'var(--cp-pink-100)' }};
+    --c-secondary-2: {{ current_scheme.secondary_color_2 | default: 'var(--cp-pink-300)' }};
+    --c-secondary-3: {{ current_scheme.secondary_color_3 | default: 'var(--cp-pink-500)' }};
+    --c-secondary-4: {{ current_scheme.secondary_color_4 | default: 'var(--cp-pink-700)' }};
+    --c-accent: {{ current_scheme.accent_color | default: 'var(--cp-yellow-500)' }};
+
+    /* Semantic Colors */
+    --c-error: {{ current_scheme.error_color | default: 'var(--cp-orange-500)' }};
+    --c-success: {{ current_scheme.success_color | default: 'var(--cp-green-500)' }};
+
+
+    /*
+      Foundations - Colors
+    */
+  
+    /* Background */
+    --bg_base: var(--c-neutral-1);
+    --bg_brand-light: var(--c-primary-light);
+    --bg_brand-dark: var(--c-primary-dark);
+
+    --bg_neutral-light: var(--c-neutral-2);
+    --bg_neutral-dark: var(--c-neutral-3);
+
+    --bg_interactive_base: var(--c-secondary-3);
+    --bg_interactive_base-light: var(--c-secondary-1);
+    --bg_interactive_base-dark: var(--c-secondary-4);
+    --bg_interactive_disabled: var(--c-secondary-2);
+    --bg_interactive_alt-light: var(--c-primary-light);
+    --bg_interactive_alt-dark: var(--c-primary-dark);
+
+    /* Border */
+    --border_base: var(--c-neutral-4);
+    --border_base-dark: var(--c-secondary-4);
+    --border_interactive_alt: var(--c-primary-dark);
+
+    /* Text */
+    --text_body-light: var(--c-neutral-5);
+    --text_body: var(--c-neutral-6);
+    --text_headline: var(--c-neutral-6);
+    --text_inverse: var(--c-neutral-1);
+
+    --text_interactive_base: var(--c-secondary-3);
+    --text_interactive_base-dark: var(--c-secondary-4);
+    --text_interactive_disabled: var(--c-secondary-2);
+    
+    /* Accents */
+    --bg_accent: var(--c-accent);
+    --text_accent-promo: var(--c-secondary-3);
+  }
+
+  /*
+    Utility Classes
+  */
+  .uc-color-inverse {
+    color: var(--text_inverse);
+  }
+</style>
