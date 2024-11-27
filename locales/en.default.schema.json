@@ -111,6 +111,14 @@
         }
       }
     },
+    "brand": {
+      "name": "Brand",
+      "settings": {
+        "brand_corner_radius": {
+          "label": "General corner radius"
+        }
+      }
+    },
     "colors": {
       "name": "Colors",
       "settings": {

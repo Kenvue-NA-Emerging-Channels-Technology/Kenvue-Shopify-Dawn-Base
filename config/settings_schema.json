@@ -34,6 +34,21 @@
     ]
   },
   {
+    "name": "t:settings_schema.brand.name",
+    "settings": [
+      {
+        "type": "range",
+        "id": "brand_corner_radius",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "default": 4,
+        "unit": "px",
+        "label": "t:settings_schema.brand.settings.brand_corner_radius.label"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
