@@ -1,0 +1,112 @@
+body {
+  font-family: var(--tg_body_font-family);
+}
+
+/*
+  Typography
+*/
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: var(--tg_heading_font-family);
+  font-weight: 900;
+  line-height: var(--tg_heading_line-height);
+  letter-spacing: var(--tg_heading_letter-spacing);
+}
+
+h1, .h1 {
+  font-size: 2.98rem;
+}
+
+h2, .h2 {
+  font-size: 2.48rem;
+}
+
+h3, .h3 {
+  font-size: 2.07rem;
+}
+
+h4, .h4 {
+  font-size: 1.73rem;
+}
+
+h5, .h5 {
+  font-size: 1.44rem;
+}
+
+.display-heading {
+  font-size: 3.58rem;
+}
+
+.body-l {
+  font-size: 1.2rem;
+  line-height: 1.24;
+}
+
+.body-m {
+  font-size: 1rem;
+  line-height: 1.42;
+}
+
+.body-s {
+  font-size: .83rem;
+  line-height: 1.42;
+}
+
+.body-xs {
+  font-size: .69rem;
+  line-height: 1.5;
+}
+
+[class^='eyebrow'] {
+  font-weight: 900;
+  line-height: 1;
+  font-family: 'FFSeroBlack';
+  letter-spacing: 4%;
+}
+
+.eyebrow-l {
+  font-size: .83rem;
+}
+
+.eyebrow-s {
+  font-size: .69rem;
+}
+
+.eyebrow-xs {
+  font-size: .58rem;
+}
+
+[class^='button'] {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  font-family: 'TTHovesProExpandedDemiBold';
+  letter-spacing: -2%;
+}
+
+.button-small {
+  font-size: .875rem;
+}
+
+/*
+  Utility Classes
+*/
+.uc-color-inverse {
+  color: var(--text_inverse);
+}
+
+.uc-regular {
+  font-weight: 400;
+  --tg_heading_font-family: 'TTHovesProExpandedRegular';
+}
+
+.uc-demibold {
+  font-weight: 600;
+  --tg_heading_font-family: 'TTHovesProExpandedDemiBold';
+  --tg_body_font-family: 'TTHovesProDemiBold';
+}
+
+/* Headlines that aren't meant to have a Black font-weight (900) have different properties */
+.uc-demibold, .uc-regular {
+  --tg_heading_line-height: 1.1;
+  --tg_heading_letter-spacing: 0%;
+}
