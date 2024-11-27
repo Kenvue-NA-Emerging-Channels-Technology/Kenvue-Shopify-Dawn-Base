@@ -84,12 +84,21 @@
     /* Accents */
     --bg_accent: var(--c-accent);
     --text_accent-promo: var(--c-secondary-3);
+
+
+    /*
+      Foundations - Typography
+    */
+    font-size: 14px;
+    --tg_heading_line-height: 1;
+    --tg_heading_letter-spacing: -2%;
+    --tg_heading_font-family: 'FFSeroBlack';
+    --tg_body_font-family: 'TTHovesProRegular';
   }
 
-  /*
-    Utility Classes
-  */
-  .uc-color-inverse {
-    color: var(--text_inverse);
+  @media (min-width: 769px) {
+    :root {
+      font-size: 16px;
+    } 
   }
 </style>
