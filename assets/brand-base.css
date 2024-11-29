@@ -90,8 +90,12 @@ h5, .h5 {
 /*
   Utility Classes
 */
-.uc-color-inverse {
+.uc-text-inverse {
   color: var(--text_inverse);
+}
+
+.uc-color-inverse {
+  filter: invert(1);
 }
 
 .uc-regular {

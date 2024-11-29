@@ -122,6 +122,13 @@
     --spacing-15: calc(var(--spacing-unit) * 20);
     --spacing-16: calc(var(--spacing-unit) * 40);
     --spacing-17: calc(var(--spacing-unit) * 54);
+
+    {% if settings.logo != blank %}
+    /*
+      Foundations - Logo
+    */
+    --logo-url: 'https:{{ settings.logo | image_url: width: 600 }}' 
+    {% endif %}
   }
 
   @media (min-width: 769px) {
