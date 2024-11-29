@@ -116,6 +116,9 @@
       "settings": {
         "brand_corner_radius": {
           "label": "General corner radius"
+        },
+        "brand_spacing": {
+          "label": "General spacing"
         }
       }
     },

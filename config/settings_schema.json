@@ -45,6 +45,16 @@
         "default": 4,
         "unit": "px",
         "label": "t:settings_schema.brand.settings.brand_corner_radius.label"
+      },
+      {
+        "type": "range",
+        "id": "brand_spacing",
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "default": 4,
+        "unit": "px",
+        "label": "t:settings_schema.brand.settings.brand_spacing.label"
       }
     ]
   },
