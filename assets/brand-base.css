@@ -114,3 +114,25 @@ h5, .h5 {
   --tg_heading_line-height: 1.1;
   --tg_heading_letter-spacing: 0%;
 }
+
+/* Icons customization */
+.icon-cart-filled text {
+  font-size: 10px;
+}
+
+.icon-arrow-right, .icon-chevron-right {
+  transform: rotateZ(270deg);
+}
+
+.icon-arrow-up, .icon-chevron-up {
+  transform: rotateZ(180deg);
+}
+
+.icon-arrow-left, .icon-chevron-left {
+  transform: rotateZ(90deg);
+}
+
+.icon-checkbox:not(.icon-checked) path {
+  visibility: hidden;
+  opacity: 0;
+}
